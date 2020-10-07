@@ -5,7 +5,7 @@ pk = Player.kill
 
 def rand():
     ent_list = [Zombie(), Skeleton()]
-    c = 0
+    c = -1
     for obj in ent_list:
         c += 1
     ent = ent_list[random.randint(1, c)]

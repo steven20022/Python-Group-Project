@@ -5,15 +5,24 @@
 import Enemies
 import Player
 import Rooms
+import os
+import time
 
 
+def clear():
+    # for windows
+    os.system('cls')
+    os.system("ls")
+    time.sleep(2)
 
-# Press the green button in the gutter to run the script.
 
 if __name__ == '__main__':
     e = Rooms.enterance()
+    l = Rooms.living_room()
     e.start()
-    Enemies.rand
+    ##clear()
+    l.start()
+
 
 
 

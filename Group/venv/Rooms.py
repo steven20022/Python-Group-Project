@@ -2,6 +2,14 @@ import random
 import Enemies
 import Player
 
+def rand():
+    room_list = [living_room()]
+    c = 0
+    for obj in room_list:
+        c += 1
+    room = room_list[random.randint(1, c)]
+    return room
+
 class enterance:
     global weapon
 
@@ -34,3 +42,12 @@ class living_room:
     def start(self):
         print("You walk into a room that looks to be an old run down Living Room\nYou see something moving in the dark\nIt's a ", self.ent.name)
         self.ent.intro()
+        while True:
+            response = input("Do you choose to fight or try and run past it")
+            if response ==   "fight":
+                break
+            if response == "run":
+                break
+            else:
+                print("Didnt catch that")
+
