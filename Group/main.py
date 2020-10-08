@@ -20,7 +20,6 @@ if __name__ == '__main__':
     e = Rooms.enterance()
     l = Rooms.living_room()
     e.start()
-    ##clear()
     l.start()
 
 
