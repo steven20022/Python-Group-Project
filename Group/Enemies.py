@@ -25,7 +25,7 @@ class Zombie:
         print("A " + self.name + " Appears Before You")
 
     def stats(self):
-        print("Zombie has " + str(self.hp) + "hp")
+        print(self.name, " has " + str(self.hp) + "hp")
 
     def attack(self):
         hit = (random.randint(2, 5)) + (pk * 2)
@@ -47,7 +47,7 @@ class Skeleton:
         print("A " + self.name + " Appears Before You")
 
     def stats(self):
-        print("Zombie has " + str(self.hp) + "hp")
+        print(self.name," has " + str(self.hp) + "hp")
 
     def attack(self):
         hit = random.randint(2, 5)
