@@ -20,7 +20,6 @@ class Zombie:
     def __init__(self):
         global pk
         self.hp += (random.randint(0, 11)) + (pk * 3)
-        name = "Zombie"
 
     def intro(self):
         print("A " + self.name + " Appears Before You")
@@ -35,6 +34,7 @@ class Zombie:
     def hit(self, dmg):
         self.hp -= dmg
 
+
 class Skeleton:
     hp = 10
     name = "Skeleton"
@@ -42,7 +42,6 @@ class Skeleton:
 
     def __init__(self):
         self.hp += random.randint(0, 11)
-        name = "Skeleton"
 
     def intro(self):
         print("A " + self.name + " Appears Before You")
