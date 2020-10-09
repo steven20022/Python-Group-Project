@@ -56,3 +56,5 @@ class Skeleton:
 
     def hit(self, dmg):
         self.hp -= dmg
+
+

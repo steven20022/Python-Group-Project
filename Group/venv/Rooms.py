@@ -2,6 +2,9 @@ import random
 import Enemies
 import Player
 
+ent
+weapon
+
 def rand():
     room_list = [living_room()]
     c = 0
@@ -10,12 +13,13 @@ def rand():
     room = room_list[random.randint(1, c)]
     return room
 
-class enterance:
-    global weapon
+
+class Enterance:
+
 
     def __init__(self):
-        weapon_dmg=random.randint(5,26)
-        self.weapon=weapon_dmg
+        weapon_dmg = random.randint(5, 26)
+        self.weapon = weapon_dmg
 
     def start(self):
         Player.intro()
@@ -36,7 +40,10 @@ class enterance:
         if response == "yes":
             Player.atk = self.weapon
 
+
 class living_room:
+
+    global ent
     ent = Enemies.rand()
 
     def start(self):
@@ -44,10 +51,9 @@ class living_room:
         self.ent.intro()
         while True:
             response = input("Do you choose to fight or try and run past it")
-            if response ==   "fight":
+            if response == "fight":
                 break
             if response == "run":
                 break
             else:
-                print("Didnt catch that")
-
+                print("Didn't catch that")

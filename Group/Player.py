@@ -5,8 +5,8 @@ hp = 100
 atk = 0
 food = 0
 candy = 0
-bag = [food, candy]
 kill = 0
+
 
 def intro():
     global name
