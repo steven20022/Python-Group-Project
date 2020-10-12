@@ -4,22 +4,35 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 import Enemies
 import Player
+import random
 import Rooms
 import os
-import time
+
+
+def rand_room():
+    rooms = [Rooms.living_room]
+    r = random.randint(0, 0)
+    return rooms[r]
+
+
+def start():
+    Rooms.enterance.start()
+    while True:
+        room = rand_room()
+        room.start()
 
 
 def clear():
     # for windows
     os.system('cls')
     os.system("ls")
-    time.sleep(2)
 
 
 if __name__ == '__main__':
     e = Rooms.enterance()
     l = Rooms.living_room()
     e.start()
+    clear()
     l.start()
 
 
