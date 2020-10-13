@@ -20,13 +20,12 @@ class Zombie:
     def __init__(self):
         global pk
         self.hp += (random.randint(0, 11)) + (pk * 3)
-        name = "Zombie"
 
     def intro(self):
         print("A " + self.name + " Appears Before You")
 
     def stats(self):
-        print("Zombie has " + str(self.hp) + "hp")
+        print(self.name, " has " + str(self.hp) + "hp")
 
     def attack(self):
         hit = (random.randint(2, 5)) + (pk * 2)
@@ -35,6 +34,7 @@ class Zombie:
     def hit(self, dmg):
         self.hp -= dmg
 
+
 class Skeleton:
     hp = 10
     name = "Skeleton"
@@ -42,13 +42,12 @@ class Skeleton:
 
     def __init__(self):
         self.hp += random.randint(0, 11)
-        name = "Skeleton"
 
     def intro(self):
         print("A " + self.name + " Appears Before You")
 
     def stats(self):
-        print("Zombie has " + str(self.hp) + "hp")
+        print(self.name," has " + str(self.hp) + "hp")
 
     def attack(self):
         hit = random.randint(2, 5)
@@ -57,6 +56,7 @@ class Skeleton:
     def hit(self, dmg):
         self.hp -= dmg
 
+<<<<<<< HEAD
 class Ghost:
     hp = 10
     name = "Ghost"
@@ -145,3 +145,4 @@ class Werewolve:
 
     def hit(self, dmg):
         self.hp -= dmg
+
