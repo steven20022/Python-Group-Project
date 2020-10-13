@@ -13,7 +13,7 @@ def rand():
 class entrance:
 
     def __init__(self):
-        weapon_dmg = random.randint(5, 26)
+        weapon_dmg = random.randint(5, 11)
         self.weapon = weapon_dmg
 
     def start(self):

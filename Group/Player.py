@@ -21,7 +21,7 @@ def stats():
 
 
 def attack():
-    hit = (random.randint(10, 15) + atk)
+    hit = (random.randint(1, 5) + atk)
     return hit
 
 

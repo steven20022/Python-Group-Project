@@ -24,7 +24,7 @@ def drops():
         random.randint(1, 2)
         print("some candy")
         print("+", r, "candy")
-        Player.bag[0] += r
+        Player.bag[1] += r
     if r == 3:
         dmg = random.randint(Player.atk, Player.atk + 10)
         wep = random.randint(0, 3)
