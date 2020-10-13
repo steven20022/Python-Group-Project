@@ -146,3 +146,5 @@ class Werewolve:
     def hit(self, dmg):
         self.hp -= dmg
 
+
+
