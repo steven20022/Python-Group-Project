@@ -21,7 +21,7 @@ def drops():
         print("+", r, "food")
         Player.bag[0] += r
     if r == 2:
-        random.randint(1, 2)
+        r = random.randint(1, 2)
         print("some candy")
         print("+", r, "candy")
         Player.bag[1] += r
